@@ -1,11 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>FYRO.Common.Domain</RootNamespace>
-        <AssemblyName>FYRO.Common.Domain</AssemblyName>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+      <TargetFramework>net6.0</TargetFramework>
+      <RootNamespace>FYRO.Common.Domain</RootNamespace>
+      <AssemblyName>FYRO.Common.Domain</AssemblyName>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+      <RepositoryUrl>https://github.com/Hammurabidoug/FYRO.Common/tree/main/src/Domain</RepositoryUrl>
+      <VersionSuffix>1.0.0.$([System.DateTime]::UtcNow.ToString(mmff))</VersionSuffix>
+      <AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</AssemblyVersion>
+      <AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
+      <Version Condition=" '$(VersionSuffix)' == '' ">0.0.1.0</Version>
+      <Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
+      <Authors>Doug Simpson</Authors>
+      <Description>Represents campaign abstractions.</Description>
+      <Copyright>Copyright @ 2022</Copyright>
+      <PackageProjectUrl>https://github.com/Hammurabidoug/FYRO.Common/tree/main/src/Domain</PackageProjectUrl>
     </PropertyGroup>
 
 </Project>
