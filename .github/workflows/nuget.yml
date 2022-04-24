@@ -1,36 +1,26 @@
-name: "Deploy to NuGet"
+name: Publish Packages
 
 on:
   push:
-    branches: [ main ]
-
-env:
-  PROJECT_PATH: 'src/Domain/Domain.csproj'
-  PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}\output
-  NUGET_SOURCE_URL: 'https://api.nuget.org/v3/index.json'
+    branches: [ master ]
 
 jobs:
-  deploy:
-    name: 'Deploy'
-    runs-on: windows-latest
-    steps:
-    - name: 'Checkout'
-      uses: actions/checkout@v2
+  build:
+    runs-on: ubuntu-latest
 
-    - name: 'Install dotnet'
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '6.0.x'
-
-    - name: 'Restore packages'
-      run: dotnet restore ${{ env.PROJECT_PATH }}
-
-    - name: 'Build project'
-      run: dotnet build ${{ env.PROJECT_PATH }} --no-restore --configuration Release
-
-    - name: 'Pack project'
-      run: dotnet pack ${{ env.PROJECT_PATH }} --no-restore --configuration Release --include-symbols
-
-    - name: 'Push package'
-      run: dotnet nuget push "**/*.nupkg" -k ${{ secrets.NUGET_API_KEY }} -s ${{ env.NUGET_SOURCE_URL }}
-
+        dotnet-version: 6.0.*
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Publish FYRO.Common.Domain
+      uses: brandedoutcast/publish-nuget@v2.5.2
+      with:
+          PROJECT_FILE_PATH: src/Domain/Domain.csproj
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    
