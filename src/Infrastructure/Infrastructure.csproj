@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RepositoryUrl>https://github.com/Hammurabidoug/FYRO.Common/tree/main/src/Infrastructure</RepositoryUrl>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Doug Simpson</Authors>
     <Description>Represents common infrastructure concepts.</Description>
     <Copyright>Copyright @ 2022</Copyright>
