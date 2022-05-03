@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>FYRO.Common.Application.UnitTests</RootNamespace>
-        <AssemblyName>FYRO.Common.Application.UnitTests</AssemblyName>
+        <RootNamespace>FYRO.Application.UnitTests</RootNamespace>
+        <AssemblyName>FYRO.Application.UnitTests</AssemblyName>
 
         <IsPackable>false</IsPackable>
         <ImplicitUsings>enable</ImplicitUsings>

@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
 using MediatR;
-using ValidationException = FYRO.Common.Application.Exceptions.ValidationException;
+using ValidationException = FYRO.Application.Exceptions.ValidationException;
 
-namespace FYRO.Common.Application.Behaviours;
+namespace FYRO.Application.Behaviours;
 
 public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
      where TRequest : notnull

@@ -1,12 +1,12 @@
-﻿using FYRO.Common.Application.Abstractions;
-using FYRO.Common.Infrastructure.Services;
+﻿using FYRO.Application.Abstractions;
+using FYRO.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace FYRO.Common.Infrastructure;
+namespace FYRO.Infrastructure;
 
 public static class DependencyInjection
 {

@@ -1,7 +1,7 @@
-﻿using FYRO.Common.Domain;
+﻿using FYRO.Domain;
 using MediatR;
 
-namespace FYRO.Common.Application.Models;
+namespace FYRO.Application.Models;
 
 public class DomainEventNotification<TDomainEvent> : INotification where TDomainEvent : DomainEvent
 {

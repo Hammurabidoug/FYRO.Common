@@ -1,4 +1,4 @@
-﻿namespace FYRO.Common.Domain;
+﻿namespace FYRO.Domain;
 
 public interface IHasDomainEvent
 {

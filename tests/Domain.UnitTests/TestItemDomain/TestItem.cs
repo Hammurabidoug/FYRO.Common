@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FYRO.Common.Domain.UnitTests.TestListDomain;
+using FYRO.Domain.UnitTests.TestListDomain;
 
-namespace FYRO.Common.Domain.UnitTests.TestItemDomain;
+namespace FYRO.Domain.UnitTests.TestItemDomain;
 public class TestItem : AuditableEntity, IHasDomainEvent
 {
     private bool tested;

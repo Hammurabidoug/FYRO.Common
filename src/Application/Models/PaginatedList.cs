@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace FYRO.Common.Application.Models;
+namespace FYRO.Application.Models;
 
 public class PaginatedList<T>
 {

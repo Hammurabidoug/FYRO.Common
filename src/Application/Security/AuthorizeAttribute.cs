@@ -1,4 +1,4 @@
-﻿namespace FYRO.Common.Application.Security;
+﻿namespace FYRO.Application.Security;
 
 /// <summary>
 /// Specifies the class this attribute is applied to requires authorization.

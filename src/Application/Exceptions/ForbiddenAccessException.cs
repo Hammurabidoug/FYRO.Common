@@ -1,4 +1,4 @@
-﻿namespace FYRO.Common.Application.Exceptions;
+﻿namespace FYRO.Application.Exceptions;
 
 public class ForbiddenAccessException : Exception
 {

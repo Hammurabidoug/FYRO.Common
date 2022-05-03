@@ -1,4 +1,4 @@
-﻿namespace FYRO.Common.Application.Models;
+﻿namespace FYRO.Application.Models;
 
 public class Result
 {

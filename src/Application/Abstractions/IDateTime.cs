@@ -1,4 +1,4 @@
-﻿namespace FYRO.Common.Application.Abstractions;
+﻿namespace FYRO.Application.Abstractions;
 
 public interface IDateTime
 {

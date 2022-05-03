@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using AutoMapper;
 
-namespace FYRO.Common.Application.Mappings;
+namespace FYRO.Application.Mappings;
 
 public class MappingProfile : Profile
 {

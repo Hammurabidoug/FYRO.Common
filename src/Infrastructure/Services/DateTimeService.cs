@@ -1,6 +1,6 @@
-﻿using FYRO.Common.Application.Abstractions;
+﻿using FYRO.Application.Abstractions;
 
-namespace FYRO.Common.Infrastructure.Services;
+namespace FYRO.Infrastructure.Services;
 
 public class DateTimeService : IDateTime
 {

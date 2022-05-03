@@ -1,6 +1,6 @@
-﻿using FYRO.Common.Domain.UnitTests.TestItemDomain;
+﻿using FYRO.Domain.UnitTests.TestItemDomain;
 
-namespace FYRO.Common.Domain.UnitTests.TestListDomain;
+namespace FYRO.Domain.UnitTests.TestListDomain;
 public class TestList : AuditableEntity
 {
     public int Id { get; set; }

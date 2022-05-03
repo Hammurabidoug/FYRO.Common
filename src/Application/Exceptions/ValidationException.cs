@@ -1,6 +1,6 @@
 ﻿using FluentValidation.Results;
 
-namespace FYRO.Common.Application.Exceptions;
+namespace FYRO.Application.Exceptions;
 
 public class ValidationException : Exception
 {

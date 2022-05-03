@@ -1,10 +1,10 @@
-﻿using FYRO.Common.Application.Abstractions;
-using FYRO.Common.Application.Models;
-using FYRO.Common.Domain;
+﻿using FYRO.Application.Abstractions;
+using FYRO.Application.Models;
+using FYRO.Domain;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace FYRO.Common.Infrastructure.Services;
+namespace FYRO.Infrastructure.Services;
 
 public class DomainEventService : IDomainEventService
 {

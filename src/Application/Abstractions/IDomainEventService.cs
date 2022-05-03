@@ -1,6 +1,6 @@
-﻿using FYRO.Common.Domain;
+﻿using FYRO.Domain;
 
-namespace FYRO.Common.Application.Abstractions;
+namespace FYRO.Application.Abstractions;
 
 public interface IDomainEventService
 {

@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace FYRO.Common.Application.Mappings;
+namespace FYRO.Application.Mappings;
 
 public interface IMapFrom<T>
 {

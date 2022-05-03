@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using FYRO.Common.Application.Models;
+using FYRO.Application.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace FYRO.Common.Application.Mappings;
+namespace FYRO.Application.Mappings;
 
 public static class MappingExtensions
 {

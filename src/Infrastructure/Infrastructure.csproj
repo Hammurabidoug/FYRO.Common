@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>FYRO.Common.Infrastructure</RootNamespace>
-    <AssemblyName>FYRO.Common.Infrastructure</AssemblyName>
+    <RootNamespace>FYRO.Infrastructure</RootNamespace>
+    <AssemblyName>FYRO.Infrastructure</AssemblyName>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RepositoryUrl>https://github.com/Hammurabidoug/FYRO.Common/tree/main/src/Infrastructure</RepositoryUrl>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Doug Simpson</Authors>
     <Description>Represents common infrastructure concepts.</Description>
     <Copyright>Copyright @ 2022</Copyright>

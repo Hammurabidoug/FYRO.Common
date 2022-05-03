@@ -1,9 +1,9 @@
-﻿using FYRO.Common.Application.Exceptions;
+﻿using FYRO.Application.Exceptions;
 using FluentAssertions;
 using FluentValidation.Results;
 using NUnit.Framework;
 
-namespace FYRO.Common.Application.UnitTests.Common.Exceptions;
+namespace FYRO.Application.UnitTests.Common.Exceptions;
 
 public class ValidationExceptionTests
 {

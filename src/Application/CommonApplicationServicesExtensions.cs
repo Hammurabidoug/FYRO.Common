@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using FluentValidation;
 using MediatR;
-using FYRO.Common.Application.Behaviours;
+using FYRO.Application.Behaviours;
 
 namespace Microsoft.Extensions.DependencyInjection;
 

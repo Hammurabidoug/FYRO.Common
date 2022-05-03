@@ -1,13 +1,13 @@
 ﻿using System.Runtime.Serialization;
 using AutoMapper;
-using FYRO.Common.Application.Mappings;
-using FYRO.Common.Application.UnitTests.TestDomainList;
-using FYRO.Common.Application.UnitTests.TestItemDomain;
-using FYRO.Common.Domain.UnitTests.TestItemDomain;
-using FYRO.Common.Domain.UnitTests.TestListDomain;
+using FYRO.Application.Mappings;
+using FYRO.Application.UnitTests.TestDomainList;
+using FYRO.Application.UnitTests.TestItemDomain;
+using FYRO.Domain.UnitTests.TestItemDomain;
+using FYRO.Domain.UnitTests.TestListDomain;
 using NUnit.Framework;
 
-namespace FYRO.Common.Application.UnitTests.Mappings;
+namespace FYRO.Application.UnitTests.Mappings;
 
 public class MappingTests
 {
