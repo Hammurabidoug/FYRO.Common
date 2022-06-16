@@ -13,6 +13,7 @@ public abstract class ValueObject
         return left?.Equals(right!) != false;
     }
 
+    // The non-equal operation.
     protected static bool NotEqualOperator(ValueObject left, ValueObject right)
     {
         return !EqualOperator(left, right);
