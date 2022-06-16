@@ -6,8 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RepositoryUrl>https://github.com/Hammurabidoug/FYRO.Common/tree/main/src/Application</RepositoryUrl>
-    <Version>1.0.7</Version>
-    <Authors>Doug Simpson</Authors>
+    <VersionSuffix>1.0.15.$([System.DateTime]::UtcNow.ToString(mmff))</VersionSuffix>
+    <AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</AssemblyVersion>
+    <AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
+    <Version Condition=" '$(VersionSuffix)' == '' ">0.0.1.0</Version>
+    <Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>    <Authors>Doug Simpson</Authors>
     <Description>Represents common application concepts.</Description>
     <Copyright>Copyright @ 2022</Copyright>
     <PackageProjectUrl>https://github.com/Hammurabidoug/FYRO.Common/tree/main/src/Application</PackageProjectUrl>
