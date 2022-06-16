@@ -7,7 +7,6 @@
       <ImplicitUsings>enable</ImplicitUsings>
       <Nullable>enable</Nullable>
       <RepositoryUrl>https://github.com/Hammurabidoug/FYRO.Common/tree/main/src/Domain</RepositoryUrl>
-      <Version>1.0.4</Version>
       <Authors>Doug Simpson</Authors>
       <Description>Represents common domain concepts.</Description>
       <Copyright>Copyright @ 2022</Copyright>
