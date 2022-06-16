@@ -23,19 +23,19 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Publish FYRO.Application
-      uses: brandedoutcast/publish-nuget@v2.5.5
+      uses: brandedoutcast/publish-nuget@v2
       with:
           PROJECT_FILE_PATH: src/Application/Application.csproj
           NUGET_KEY: ${{secrets.NUGET_TOKEN}}
 
     - name: Publish FYRO.Domain
-      uses: brandedoutcast/publish-nuget@v2.5.5
+      uses: brandedoutcast/publish-nuget@v2
       with:
           PROJECT_FILE_PATH: src/Domain/Domain.csproj
           NUGET_KEY: ${{secrets.NUGET_TOKEN}}
 
     - name: Publish FYRO.Infrastructure
-      uses: brandedoutcast/publish-nuget@v2.5.5
+      uses: brandedoutcast/publish-nuget@v2
       with:
           PROJECT_FILE_PATH: src/Infrastructure/Infrastructure.csproj
           NUGET_KEY: ${{secrets.NUGET_TOKEN}}
