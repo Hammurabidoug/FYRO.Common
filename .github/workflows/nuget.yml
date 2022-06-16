@@ -42,3 +42,9 @@ jobs:
 
     - name: 'Push FYRO.Dmain package'
       run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}/FYRO.Application.*.nupkg -k ${{ secrets.NUGET_TOKEN }} -s ${{ env.NUGET_SOURCE_URL }} --skip-duplicate
+
+    - name: 'Pack FYRO.Infrastructure project'
+      run: dotnet pack src/Infrastructure/Infrastructure.csproj --no-restore --no-build --configuration Release --include-symbols -p:PackageVersion=${{ steps.version.outputs.version-without-v }} --output ${{ env.PACKAGE_OUTPUT_DIRECTORY }}
+
+    - name: 'Push FYRO.Infrastructure package'
+      run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}/FYRO.Infrastructure.*.nupkg -k ${{ secrets.NUGET_TOKEN }} -s ${{ env.NUGET_SOURCE_URL }} --skip-duplicate
