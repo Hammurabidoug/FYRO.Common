@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RepositoryUrl>https://github.com/Hammurabidoug/FYRO.Common/tree/main/src/Application</RepositoryUrl>
+    <Version>1.0.5</Version>
     <Authors>Doug Simpson</Authors>
     <Description>Represents common application concepts.</Description>
     <Copyright>Copyright @ 2022</Copyright>
