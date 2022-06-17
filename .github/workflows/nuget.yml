@@ -21,6 +21,9 @@ jobs:
       with:
         dotnet-version: 6.0.*
 
+    - name: Publish Nuget
+      uses: Hammurabidoug/publish-nuget@main
+      
     - name: Install dependencies
       run: dotnet restore
 
