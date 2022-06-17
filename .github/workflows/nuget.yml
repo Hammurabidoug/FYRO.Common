@@ -4,6 +4,8 @@ on:
   push:
     tags:
     - 'v*'
+    
+  workflow_dispatch:
 
 env:
   PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}/output
