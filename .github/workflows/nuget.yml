@@ -25,6 +25,8 @@ jobs:
 
     - name: Publish Nuget
       uses: Hammurabidoug/publish-nuget@main
+      with:
+        milliseconds: 5000
       
     - name: Install dependencies
       run: dotnet restore
