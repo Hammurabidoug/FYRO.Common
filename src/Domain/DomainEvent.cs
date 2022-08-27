@@ -5,7 +5,6 @@ public interface IHasDomainEvent
     public List<DomainEvent> DomainEvents { get; set; }
 }
 
-// Represents a domain event.
 public abstract class DomainEvent
 {
     protected DomainEvent()
