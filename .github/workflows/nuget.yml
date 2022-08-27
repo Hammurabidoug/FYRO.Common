@@ -4,6 +4,8 @@ on:
   push:
     tags:
     - 'v*'
+    
+  workflow_dispatch:
 
 env:
   PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}/output
@@ -21,6 +23,11 @@ jobs:
       with:
         dotnet-version: 6.0.*
 
+    - name: Publish Nuget
+      uses: Hammurabidoug/publish-nuget@main
+      with:
+        milliseconds: 5000
+      
     - name: Install dependencies
       run: dotnet restore
 
