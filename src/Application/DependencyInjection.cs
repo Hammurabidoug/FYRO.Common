@@ -9,7 +9,7 @@ namespace Microsoft.Extensions.DependencyInjection;
 
 public static class DependencyInjection
 {
-    public static IFYROBuilder AddApplication(this IServiceCollection services)
+    public static IFYROApplicationBuilder AddApplication(this IServiceCollection services)
     {
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
